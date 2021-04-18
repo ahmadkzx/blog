@@ -13,13 +13,13 @@ class Header extends React.Component {
 
 					<div className="header-social">
 						<a href="/" target="_blank" className="header-social__item">
-							<i className="bi-linkedin"></i>
+							<i className="bi-telegram"></i>
 						</a>
 						<a href="/" target="_blank" className="header-social__item">
 							<i className="bi-instagram"></i>
 						</a>
 						<a href="/" target="_blank" className="header-social__item">
-							<i className="bi-telegram"></i>
+							<i className="bi-linkedin"></i>
 						</a>
 					</div>
 
