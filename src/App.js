@@ -1,5 +1,6 @@
 import Home from './pages/Home'
 import Header from './components/Header'
+import Footer from './components/Footer'
 import SiteTitle from './components/SiteTitle'
 import AboutMeSidebar from './components/AboutMeSidebar'
 
@@ -19,6 +20,7 @@ function App() {
 
       </div>
 
+      <Footer />
     </div>
   );
 }
