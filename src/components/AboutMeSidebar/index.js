@@ -21,15 +21,16 @@ class AboutMeSideBar extends React.Component {
           <p className="about-me-bio__description">
           لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ
           و با استفاده از طراحان گرافیک است چاپگرها و متون بلکه روزنامه و مجل
-          در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیا
-          و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد
           </p>
         </div>
 
         <div className="about-me-social">
-          <a href="/" className="about-me-social__link"><i className="bi-linkedin"></i></a>
-          <a href="/" className="about-me-social__link"><i className="bi-instagram"></i></a>
-          <a href="/" className="about-me-social__link"><i className="bi-telegram"></i></a>
+          <span className="about-me-social__title">شبکه های اجتماعی</span>
+          <div className="about-me-social-items">
+            <a href="/" className="about-me-social-items__link"><i className="bi-linkedin"></i></a>
+            <a href="/" className="about-me-social-items__link"><i className="bi-instagram"></i></a>
+            <a href="/" className="about-me-social-items__link"><i className="bi-telegram"></i></a>
+          </div>
         </div>
       </div>
     )

@@ -8,7 +8,7 @@
 
   &-header {
     width: 100%;
-    padding: 1rem;
+    padding: .5rem 1rem;
     background: $gray-200;
 
     &__title {
@@ -42,7 +42,7 @@
 
     &__description {
       margin-top: .5rem;
-      text-align: justify;
+      text-align: center;
     }
   }
 
@@ -50,7 +50,24 @@
     margin-top: 1rem;
     text-align: left;
 
-    &__link {
+    &__title {
+      display: block;
+      width: 100%;
+      padding: .5rem 1rem;
+      background: $gray-200;
+      text-align: center;
+      font-weight: bold;
+      margin-bottom: 1rem;
+    }
+
+    &-items {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    &-items__link {
       margin-right: 1rem;
       font-size: 1.3rem;
 
