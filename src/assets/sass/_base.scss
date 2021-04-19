@@ -29,3 +29,14 @@ a {
 		width: 95%;
 	}
 }
+
+.main {
+	position: relative;
+	display: flex;
+	align-items: flex-start;
+	justify-content: space-between;
+
+	&-content {
+		width: 70%;
+	}
+}
