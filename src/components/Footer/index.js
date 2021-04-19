@@ -8,7 +8,7 @@ class Footer extends React.Component {
       <footer className="footer">
         <p className="footer__text">
           ساخته شده با
-          <a href="https://fa.wikipedia.org/wiki/%D8%B9%D8%B4%D9%82" className="footer__text__love" target="_blank">عشق</a>
+          <a href="https://fa.wikipedia.org/wiki/%D8%B9%D8%B4%D9%82" className="footer__text__love" target="_blank" rel="noreferrer">عشق</a>
         </p>
       </footer>
     )
