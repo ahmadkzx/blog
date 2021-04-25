@@ -1,1 +1,1 @@
-**Simple Blog With React And Mirage.js ✅**
+**Simple Blog With React, Mirage.js And BEM Standard ✅**
