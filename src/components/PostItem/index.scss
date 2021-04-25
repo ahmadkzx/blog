@@ -1,0 +1,33 @@
+@import "../../assets/sass/variables";
+
+.post-item {
+  width: 100%;
+  margin-bottom: 1rem;
+
+  &__title {
+    font-size: 1.6rem;
+    color: black;
+
+    &:hover {
+      color: $blue;
+    }
+  }
+
+  &__summary {
+    margin-top: .5rem;
+    font-size: 1.1rem;
+  }
+
+  &-footer {
+    margin-top: .5rem;
+    color: $gray-600;
+
+    &__date {
+      margin-left: .5rem;
+    }
+
+    &__time-to-read {
+      margin-right: .5rem;
+    }
+  }
+}

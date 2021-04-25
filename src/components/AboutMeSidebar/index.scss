@@ -1,0 +1,79 @@
+@import "../../assets/sass/variables";
+
+.about-me {
+  position: sticky;
+  top: 1rem;
+  width: 30%;
+  padding-left: 1rem;
+
+  &-header {
+    width: 100%;
+    padding: .5rem 1rem;
+    background: $gray-200;
+
+    &__title {
+      display: inline-block;
+      width: 100%;
+      text-align: center;
+      font-weight: bold;
+    }
+  }
+
+  &-picture {
+    width: 100%;
+    margin-top: 1rem;
+
+    img {
+      width: 100%;
+      filter: grayscale(1);
+    }
+  }
+  
+  &-bio {
+    width: 100%;
+
+    &__name {
+      font-size: 1.3rem;
+    }
+
+    &__skill {
+      color: $blue;
+    }
+
+    &__description {
+      margin-top: .5rem;
+      text-align: center;
+    }
+  }
+
+  &-social {
+    margin-top: 1rem;
+    text-align: left;
+
+    &__title {
+      display: block;
+      width: 100%;
+      padding: .5rem 1rem;
+      background: $gray-200;
+      text-align: center;
+      font-weight: bold;
+      margin-bottom: 1rem;
+    }
+
+    &-items {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    &-items__link {
+      margin-right: 1rem;
+      font-size: 1.3rem;
+
+      &:hover {
+        color: $blue;
+      }
+    }
+  }
+}

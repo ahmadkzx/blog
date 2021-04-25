@@ -1,0 +1,36 @@
+@import "../../assets/sass/variables";
+
+.header {
+	width: 100%;
+	padding: .7rem 1rem;
+	background: $gray-200;
+
+	&-container {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+	}
+
+	&-nav__link {
+		display: inline-block;
+		font-weight: 500;
+		margin-left: 3rem;
+
+		&:hover {
+			color: $blue;
+		}
+	}
+
+	&-social__item {
+		display: inline-block;
+		margin-right: 1rem;
+		font-weight: bold;
+		font-size: 1.3rem;
+		color: black;
+		transform: translateY(3px);
+
+		&:hover {
+			color: $blue;
+		}
+	}
+}

@@ -1,23 +1,37 @@
-import logo from './logo.svg';
-import './App.css';
+import Home from './pages/Home'
+import Post from './pages/Post'
+import Header from './components/Header'
+import Footer from './components/Footer'
+import SiteTitle from './components/SiteTitle'
+import AboutMeSidebar from './components/AboutMeSidebar'
+import { Route, BrowserRouter as Router } from 'react-router-dom'
 
 function App() {
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+			<Router>
+				<Header />
+
+				<div className="container">
+					<SiteTitle />
+
+					<div className="main">
+						<AboutMeSidebar />
+
+						<div className="main-content">
+					
+						
+							<Route exact path="/" component={Home} />
+							<Route path="/post/:id" component={Post} />
+							
+						</div>
+					</div>
+
+				</div>
+
+				<Footer />
+			</Router>
     </div>
   );
 }
