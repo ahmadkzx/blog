@@ -7,7 +7,7 @@ export default function makeServer() {
 		routes() {
 			this.get('/api/posts', () => posts)
 
-			this.get('/api/posts/:id', (schema, request) => {
+			this.get('/api/post/:id', (schema, request) => {
 				let id = request.params.id
 				
 				return posts.find(post => +post.id === +id)

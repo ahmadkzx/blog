@@ -19,15 +19,10 @@ function App() {
           <AboutMeSidebar />
 
           <div className="main-content">
-
+				
 					<Router>
-						<Route exact path="/">
-							<Home />
-						</Route>
-
-						<Route path="/post">
-							<Post />
-						</Route>
+						<Route exact path="/" component={Home} />
+						<Route path="/post/:id" component={Post} />
 					</Router>
 						
 					</div>

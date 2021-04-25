@@ -22,6 +22,7 @@ class Home extends React.Component {
 
 				{ this.state.posts.map(post => (
 					<PostItem
+						id={post.id}
 						date={post.date}
 						title={post.title}
 						summary={post.summary}

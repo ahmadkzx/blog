@@ -7,7 +7,7 @@ class PostItem extends React.Component {
   render() {
     return (
       <div className="post-item">
-        <Link to="/footer"><h6 className="post-item__title">{ this.props.title }</h6></Link>
+        <Link to={`/post/${this.props.id}`}><h6 className="post-item__title">{ this.props.title }</h6></Link>
         <p className="post-item__summary">{ this.props.summary }</p>
         <div className="post-item-footer">
           <span className="post-item-footer__date">{ this.props.date }</span>
