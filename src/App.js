@@ -1,8 +1,10 @@
 import Home from './pages/Home'
+import Post from './pages/Post'
 import Header from './components/Header'
 import Footer from './components/Footer'
 import SiteTitle from './components/SiteTitle'
 import AboutMeSidebar from './components/AboutMeSidebar'
+import { Route, BrowserRouter as Router } from 'react-router-dom'
 
 function App() {
   return (
@@ -15,7 +17,19 @@ function App() {
         <div className="main">
           <AboutMeSidebar />
 
-          <div className="main-content"><Home /></div>
+          <div className="main-content">
+
+					<Router>
+						<Route exact path="/">
+							<Home />
+						</Route>
+
+						<Route path="/post">
+							<Post />
+						</Route>
+					</Router>
+						
+					</div>
         </div>
 
       </div>

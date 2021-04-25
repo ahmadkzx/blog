@@ -6,9 +6,9 @@ class Home extends React.Component {
   render() {
     return (
       <div className="home-page" style={{paddingRight: '1rem'}}>
-        <PostItem />
-        <PostItem />
-        <PostItem />
+				<PostItem />
+				<PostItem />
+				<PostItem />
       </div>
     )
   }

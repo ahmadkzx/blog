@@ -1,12 +1,13 @@
 import React from 'react'
 import './index.scss'
+import { Link } from 'react-router-dom'
 
 class PostItem extends React.Component {
 
   render() {
     return (
       <div className="post-item">
-        <a href="/"><h6 className="post-item__title">اولین پست این وبلاگ!</h6></a>
+        <Link to="/footer"><h6 className="post-item__title">اولین پست این وبلاگ!</h6></Link>
         <p className="post-item__summary">
         لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافی
          است چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است
