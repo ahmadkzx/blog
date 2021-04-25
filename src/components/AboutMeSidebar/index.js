@@ -1,5 +1,5 @@
-import React from 'react'
 import './index.scss'
+import React from 'react'
 import avatar from '../../assets/img/avatar.jpg'
 
 class AboutMeSideBar extends React.Component {

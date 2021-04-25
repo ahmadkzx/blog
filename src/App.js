@@ -10,27 +10,28 @@ function App() {
 
   return (
     <div className="App">
-      <Header />
+			<Router>
+				<Header />
 
-      <div className="container">
-        <SiteTitle />
+				<div className="container">
+					<SiteTitle />
 
-        <div className="main">
-          <AboutMeSidebar />
+					<div className="main">
+						<AboutMeSidebar />
 
-          <div className="main-content">
-				
-					<Router>
-						<Route exact path="/" component={Home} />
-						<Route path="/post/:id" component={Post} />
-					</Router>
+						<div className="main-content">
+					
 						
+							<Route exact path="/" component={Home} />
+							<Route path="/post/:id" component={Post} />
+							
+						</div>
 					</div>
-        </div>
 
-      </div>
+				</div>
 
-      <Footer />
+				<Footer />
+			</Router>
     </div>
   );
 }

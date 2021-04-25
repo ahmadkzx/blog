@@ -1,5 +1,6 @@
-import React from 'react'
 import './index.scss'
+import React from 'react'
+import { Link } from 'react-router-dom'
 
 class Header extends React.Component {
 	render() {
@@ -7,7 +8,7 @@ class Header extends React.Component {
 			<header className="header">
 				<div className="header-container container">
 					<nav className="header-nav">
-						<a href="/" className="header-nav__link">خانه</a>
+						<Link to="/" className="header-nav__link">خانه</Link>
 						<a href="/" className="header-nav__link">رزومه</a>
 					</nav>
 
